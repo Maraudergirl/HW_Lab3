@@ -9,15 +9,17 @@ html, body {
 }
 
 body {
-  background-color: white;
-  font-size:3vw;
+  background-color: #ddffcc;
+  font-size:5vw;
   color: black;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 header {
-  background-color: #cccccc;
-  font-size:4vw;
-  padding: 30px;
+  background-color: #4d94ff;
+  font-size:8vw;
+  padding: 20px;
   font-weight: bold;
 }
 
@@ -34,9 +36,15 @@ ul {
 }
 
 li {
-  width: 33.3%;
   float: left;
-  border-right: 2px solid white;
+  border-right: 2px solid #ddffcc;
+}
+
+#nav1 {
+  width: 26%;  
+}
+#nav2, #nav3 {
+  width: 37%;  
 }
 
 li a {
@@ -52,21 +60,19 @@ li a:hover {
 }
 
 main {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px;
   height: calc(100% - 180px);
   overflow: auto;
-  margin-left: 30px;
 }
 
 
 h1 {
-  font-size:4vw;
+  font-size:6vw;
   font-weight: bold;
 }
 
 sup, sub {
-  font-size:2vw;
+  font-size:3.5vw;
 }
 
 .eq {

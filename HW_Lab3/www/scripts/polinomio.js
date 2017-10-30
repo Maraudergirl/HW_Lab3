@@ -33,28 +33,6 @@ function solvePoli() {
 			x1_i = Math.sqrt(-D)/(2*A);
 			x2_i = -Math.sqrt(-D)/(2*A);
 
-			/*
-			// Los siguientes if son para que se vea más bonito al escribir las soluciones
-			if (x1_r == 0){
-				if(x1_i < 0){
-					text1 = "- i·"+(x1_i*(-1));
-				}
-				else{
-					text1 = "i·"+x1_i;
-				}
-				if(x2_i < 0){
-					text2 = "- i·"+(x2_i*(-1));
-				}
-				else{
-					text2 = "i·"+x2_i;
-				}
-			}
-			else{
-				text1 = x_r + " + i·"+x1_i;
-				text2 = x_r + " + i·"+x2_i;
-			}
-			*/
-
 			text1 = x_r + "+ i·"+x1_i;
 			text2 = x_r + "+ i·"+x2_i;
 			document.getElementById("sol1").innerHTML = text1;

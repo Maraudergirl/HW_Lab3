@@ -28,14 +28,13 @@
 
 <nav>
 	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="polinomio.html">Polinomios</a></li>
-		<li><a href=#triangulo>Triángulos</a></li>
+		<li id="nav1"><a href="index.html">Home</a></li>
+		<li id="nav2"><a href="polinomio.html">Polinomios</a></li>
+		<li id="nav3"><a href=#triangulo>Triángulos</a></li>
 	</ul>
 </nav>
 
 <main>
-
 	<p> En esta sección trabajaremos con triángulos. </p>
 	<p> Un triángulo de forma general tiene seis características principales: tres lineales (las longitudes de los lados a, b, c) y tres angulares (α, β, γ). Las que se pueden observar en la siguiente imagen: </p>
 	<img src="images\Triangle-angles.svg">
@@ -50,10 +49,13 @@
 			Por favor ingresa los valores para cada lado! :)
 		</p>
 		
-		a: <input type="number" id="lado_a"></br>
-		b: <input type="number" id="lado_b"></br>
-		c: <input type="number" id="lado_c"></br>
-		<button type="button" onclick="solveTriLLL()">Submit</button>
+		<!-- Bloque donde se esperan los valores de los lados el triangulo -->
+		<div class="eq">
+			a: <input type="number" id="lado_a"></br>
+			b: <input type="number" id="lado_b"></br>
+			c: <input type="number" id="lado_c"></br>
+			<button type="button" onclick="solveTriLLL()">Submit</button>
+		</div>
 	  	
 		<p><i> Ten en cuenta, para que se pueda formar un triángulo, la suma de las longitudes de los dos lados más cortos, tiene que ser mayor o igual que la longitud del lado más largo!</i></p>
 
@@ -61,6 +63,8 @@
 	</div>
 
 	<div id="answer">
+		<hr>
+		
 		<p> El triángulo ingresado tiene la siguiente forma </p>
 
 		<p id="triangle"></p>

@@ -35,11 +35,30 @@ function solveTriLLL() {
     c = document.getElementById("lado_c").value;
 
 	if (!isTriangle(a, b, c)){
-	    alpha = Math.acos((b*b + c*c - a*a)/(2*b*c)) // en radianes
-	    alpha = 180*alpha/Math.PI;	// en grados
-	    beta = Math.acos((a*a + c*c - b*b)/(2*a*c)) // en radianes
-	    beta = 180*beta/Math.PI;	// en grados
-	    gamma = 180 - alpha - beta;
+
+      if (a >= b && a >= c){
+        beta = Math.acos((a*a + c*c - b*b)/(2*a*c)) // en radianes
+        beta = 180*beta/Math.PI;  // en grados
+        gamma = Math.acos((b*b + a*a - c*c)/(2*a*b)) // en radianes
+        gamma = 180*gamma/Math.PI;  // en grados
+        alpha = 180 - beta - gamma;
+      }
+      else {
+        if (b >= a & b >= c){
+          alpha = Math.acos((b*b + c*c - a*a)/(2*b*c)) // en radianes
+          alpha = 180*alpha/Math.PI;  // en grados
+          gamma = Math.acos((a*a + b*b - c*c)/(2*a*b)) // en radianes
+          gamma = 180*gamma/Math.PI;  // en grados
+          beta = 180 - alpha - gamma;
+        }
+        else{
+          alpha = Math.acos((b*b + c*c - a*a)/(2*b*c)) // en radianes
+          alpha = 180*alpha/Math.PI;  // en grados
+          beta = Math.acos((a*a + c*c - b*b)/(2*a*c)) // en radianes
+          beta = 180*beta/Math.PI;  // en grados
+          gamma = 180 - alpha - beta;
+        }
+      }
 
 	    var triangle = {
 	    	side1: a,
