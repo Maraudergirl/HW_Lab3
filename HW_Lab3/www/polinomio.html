@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Specifies the character encoding for the HTML document -->
+	<meta charset="UTF-8">
+<!-- Define a description of your web page. Example:
+	<meta name="description" content="Free Web tutorials"> -->
+<!-- Define keywords for search engines. Example:
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript"> -->
+	<meta name="author" content="Camila A. Carrasco Rivera" />
+<!-- Setting the viewport to make your website look good on all devices. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Refresh document every 30 seconds. Example:
+	<meta http-equiv="refresh" content="30"> -->
+
+	<title> Polinomios! </title>
+
+	<link rel="stylesheet" href="css/polinomio.css">
+	<script src="scripts/polinomio.js"></script>
+	<!-- En caso de que no tengan activado javascript en el browser-->
+    <noscript> Sorry... JavaScript is needed to go ahead. </noscript>
+</head>
+
+
+<body>
+<header> Ecuación Cuadrática </header>
+
+<nav>
+	<ul>
+		<li><a href="index.html" >Home</a></li>
+		<li><a href="polinomio.html" >Polinomios</a></li>
+		<li><a href="triangulo.html" >Triángulos</a></li>
+	</ul>
+</nav>
+
+<!-- Bloque principal, dividido en 2 bloques: de la pregunta y de la respuesta.-->
+<main>
+	<!-- Bloque de pregunta. Inicialmente visible. -->
+	<div id="question">
+		<p>
+			En esta sección aprenderemos a obtener las soluciones de un polinomio cuadrado.
+		</p>
+		
+		<p>
+			Este tiene la forma: </br>
+			a·X<sup>2</sup> + b·X + c = 0
+			</hr>
+		</p>
+		<p>
+			Por favor ingresa los coeficientes! :)
+		</p>
+		
+		<!-- Bloque donde se esperan los coeficientes de la ecuacion cuadratica -->
+		<div>
+			a: <input type="number" id="coefA"></br>
+			b: <input type="number" id="coefB"></br>
+			c: <input type="number" id="coefC"></br>
+			<button type="button" onclick="solvePoli()">Submit</button>
+		</div>	  	
+	</div>
+
+	<!-- Bloque de pregunta. Inicialmente visible. -->
+	<div id="answer">
+		<p> La ecuación ingresada tiene la siguiente forma: </br>
+			<span id=eqA>a</span>·X<sup>2</sup> + <span id=eqB>b</span>·X + <span id=eqC>c</span> = 0
+		</p>
+
+		<p> Las soluciones serán:</br>
+			X<sub>1</sub> = <span id="sol1"></span></br>
+			X<sub>2</sub> = <span id="sol2"></span>
+		</p>
+		
+		<hr>
+		
+		<h1>Explicación</h1>
+
+		<p> Una ecuación cuadrática puede tener dos soluciones reales distintas o una solución real, o bien dos raíces complejas. El discriminante determina la índole y la cantidad de raíces.</p>
+
+		<p>
+			El discriminante de dicha ecuacion viene dado por:</br>
+			Δ = b<sup>2</sup> - 4·a·c
+		</p>
+
+		<p> Si tenemos un discriminante positivo, tendremos dos soluciones reales distintas, mientras que si este es negativo se tienen dos raíces complejas. Y en el caso de que sea 0, tenemos una única solución.</p>
+
+		<div class="eq">
+			<p> <ins> - b ± √Δ </ins></br>2·a</p>
+		</div>
+
+		<div class="eq">
+			<p> <ins> - b </ins></br>2·a</p>
+		</div>
+
+		<div class="eq">
+			<p> <ins> - b ± i·√-Δ </ins></br>2·a</p>
+		</div>
+
+
+		<p >a·X<sup>2</sup> + b·X + c = 0 </p>
+
+
+	</div>
+
+</main>
+
+</body>
+</html>

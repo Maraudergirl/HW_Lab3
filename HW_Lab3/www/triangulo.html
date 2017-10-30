@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Specifies the character encoding for the HTML document -->
+	<meta charset="UTF-8">
+<!-- Define a description of your web page. Example:
+	<meta name="description" content="Free Web tutorials"> -->
+<!-- Define keywords for search engines. Example:
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript"> -->
+	<meta name="author" content="Camila A. Carrasco Rivera" />
+<!-- Setting the viewport to make your website look good on all devices. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Refresh document every 30 seconds. Example:
+	<meta http-equiv="refresh" content="30"> -->
+
+	<title> Polinomios! </title>
+
+	<link rel="stylesheet" href="css/triangulo.css">
+	<script src="scripts/triangulo.js"></script>
+	<!-- En caso de que no tengan activado javascript en el browser-->
+    <noscript> Sorry... JavaScript is needed to go ahead. </noscript>
+</head>
+
+
+<body>
+<header> Triángulos! :) </header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="polinomio.html">Polinomios</a></li>
+		<li><a href=#triangulo>Triángulos</a></li>
+	</ul>
+</nav>
+
+<main>
+
+	<p> En esta sección trabajaremos con triángulos. </p>
+	<p> Un triángulo de forma general tiene seis características principales: tres lineales (las longitudes de los lados a, b, c) y tres angulares (α, β, γ). Las que se pueden observar en la siguiente imagen: </p>
+	<img src="images\Triangle-angles.svg">
+
+	<div id="question">
+
+		<p>
+			Teniendose un triángulo como el que se muestra en la figura, si tenemos el valor de sus 3 lados, podemos obtener el valor de sus ángulos.
+		</p>
+
+		<p>
+			Por favor ingresa los valores para cada lado! :)
+		</p>
+		
+		a: <input type="number" id="lado_a"></br>
+		b: <input type="number" id="lado_b"></br>
+		c: <input type="number" id="lado_c"></br>
+		<button type="button" onclick="solveTriLLL()">Submit</button>
+	  	
+		<p><i> Ten en cuenta, para que se pueda formar un triángulo, la suma de las longitudes de los dos lados más cortos, tiene que ser mayor o igual que la longitud del lado más largo!</i></p>
+
+
+	</div>
+
+	<div id="answer">
+		<p> El triángulo ingresado tiene la siguiente forma </p>
+
+		<p id="triangle"></p>
+
+		<p> Con los siguientes ángulos:</br>
+			α = <span id="alp"></span></br>
+			β = <span id="bet"></span></br>
+			γ = <span id="gam"></span>
+		</p>
+
+	</div>
+
+
+</main>
+
+</body>
+</html>
