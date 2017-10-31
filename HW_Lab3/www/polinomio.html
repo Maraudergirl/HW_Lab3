@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="css/polinomio.css">
 	<script src="scripts/polinomio.js"></script>
 	<!-- En caso de que no tengan activado javascript en el browser-->
-    <noscript> Sorry... JavaScript is needed to go ahead. </noscript>
+	<noscript> Sorry... JavaScript is needed to go ahead. </noscript>
 </head>
 
 
@@ -39,12 +39,14 @@
 	<!-- Bloque de pregunta. Inicialmente visible. -->
 	<div id="question">
 		<p>
-			En esta sección aprenderemos a obtener las soluciones de un polinomio cuadrado.
+			En esta sección aprenderemos a obtener las soluciones de un polinomio cuadrado, es decir, una ecuación cuadrática.
 		</p>
 		
 		<p>
-			Este tiene la forma: </br>
-			a·X<sup>2</sup> + b·X + c = 0
+			La expresión canónica general de una ecuación cuadrática es de la forma: </br>
+			<div class="eq">
+				a·X<sup>2</sup> + b·X + c = 0, con a ≠ 0
+			</div>
 			</hr>
 		</p>
 		<p>
@@ -57,7 +59,7 @@
 			b: <input type="number" id="coefB"></br>
 			c: <input type="number" id="coefC"></br>
 			<button type="button" onclick="solvePoli()">Submit</button>
-		</div>	  	
+		</div>      
 	</div>
 
 	<!-- Bloque de pregunta. Inicialmente visible. -->
@@ -75,29 +77,45 @@
 		
 		<h1>Explicación</h1>
 
-		<p> Una ecuación cuadrática puede tener dos soluciones reales distintas o una solución real, o bien dos raíces complejas. El discriminante determina la índole y la cantidad de raíces.</p>
+		<p> Una ecuación cuadrática puede tener dos soluciones reales distintas, una solución real (doble), o bien dos raíces complejas. El discriminante determina la índole y la cantidad de raíces.</p>
 
 		<p>
-			El discriminante de dicha ecuacion viene dado por:</br>
-			Δ = b<sup>2</sup> - 4·a·c
+			El discriminante de dicha ecuación viene dado por:</br>
+
+			<div class="eq">
+				Δ = b<sup>2</sup> - 4·a·c
+			</div>
 		</p>
 
-		<p> Si tenemos un discriminante positivo, tendremos dos soluciones reales distintas, mientras que si este es negativo se tienen dos raíces complejas. Y en el caso de que sea 0, tenemos una única solución.</p>
+		<p> Si tenemos un discriminante positivo, tendremos dos soluciones reales distintas, mientras que si este es negativo se tienen dos raíces complejas. Y en el caso de que sea 0, tenemos una única solución.
+		</p>
 
 		<div class="eq">
-			<p> <ins> - b ± √Δ </ins></br>2·a</p>
+			<table>
+				<tr>
+					<th> Δ </th>
+					<th> Soluciones	</th>
+				</tr>
+				<tr>
+					<td> Δ > 0 </td>
+					<td>
+						<ins> - b ± √Δ </ins></br>2·a
+					</td>
+				</tr>
+				<tr>
+					<td> Δ = 0</td>
+					<td>
+						<ins> - b </ins></br>2·a
+					</td>
+				</tr>
+				<tr>
+					<td> Δ < 0</td>
+					<td>
+						<ins> - b ± i·√-Δ </ins></br>2·a
+					</td>
+				</tr>
+			</table>
 		</div>
-
-		<div class="eq">
-			<p> <ins> - b </ins></br>2·a</p>
-		</div>
-
-		<div class="eq">
-			<p> <ins> - b ± i·√-Δ </ins></br>2·a</p>
-		</div>
-
-
-		<p >a·X<sup>2</sup> + b·X + c = 0 </p>
 
 
 	</div>

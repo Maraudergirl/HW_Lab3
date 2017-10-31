@@ -6,11 +6,15 @@
 * Para polinomios se eligio la ecuacion cuadratica.
 * Para triangulos se eligio el calculo de sus angulos interiores dados sus 3 lados.
 
+********************************************************************************************************
+
 ## index.html
 
 * Es la página de inicio. 
 * Es solo un mensaje de bienvenida.
 * Se puede acceder a los problemas con la barra de navegacion.
+
+********************************************************************************************************
 
 ## polinomio.html
 
@@ -21,6 +25,8 @@
 * Una vez dados estos coeficientes, se esconde el bloque de pregunta y se muestra el bloque de respuesta.
 * En el bloque de respuesta se presenta la ecuacion dada por el usuario y sus soluciones, respectivas. Además se presenta una leve explicacion de como se obtuvieron los resultados.
 * Se puede acceder al resto de las paginas con la barra de navegacion.
+
+********************************************************************************************************
 
 ## triangulo.html
 
@@ -33,15 +39,21 @@
 * En el bloque de respuesta se presenta un dibujo del triangulo descrito y los valores de sus angulos.
 * Se puede acceder al resto de las paginas con la barra de navegacion.
 
+********************************************************************************************************
+
 ## index.css, polinomio.css, triangulo.css
 
 * Aquí es donde se le dió el estilo a las páginas.
 * Seleccion de colores, formato, etc..
 
-## polinomio.js,
+********************************************************************************************************
+
+## polinomio.js
 
 * Solo tiene una funcion, solvePoli().
 * SolvePoli(): Se encarga de leer los coeficientes dados, hacer el calculo de las soluciones de la ecuacion cuadratica y mostrar los resultados en la página.
+
+********************************************************************************************************
 
 ## triangulo.js
 
@@ -51,6 +63,6 @@
 * drawTriangle(): Se encarga de dibujar el triangulo a partir de los lados dados por el usuario.
 * solveTriLLL(): Funcion que se llama desde el html, se encarga de hacer toda la logica correspondiente a buscar la solucion del triangulo. Usa las funciones mencionadas.
 
-## .
-
-* El código está levemente comentado.
+********************************************************************************************************
+********************************************************************************************************
+El código está levemente comentado.

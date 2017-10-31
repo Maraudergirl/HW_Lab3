@@ -8,17 +8,6 @@ html, body {
   width: 100%;
 }
 
-@font-face {
-  font-family: Dosis;
-  src: url(fonts/Dosis-Regular.ttf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Saira;
-  src: url(fonts/SairaSemiCondensed-Regular.ttf);
-  font-weight: bold;
-}
 body {
   background-color: #ddffcc;
   font-family: Saira;
@@ -33,6 +22,18 @@ header {
   font-family: Dosis;
   font-size:8vw;
   padding: 20px;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Dosis;
+  src: url(fonts/Dosis-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Saira;
+  src: url(fonts/SairaSemiCondensed-Regular.ttf);
   font-weight: bold;
 }
 
@@ -73,15 +74,55 @@ li a:hover {
 }
 
 main {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
   height: calc(100% - 180px);
   overflow: auto;
 }
 
+input[type=number] {
+  width: 50%;
+  font-size: 4vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 10px 6px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 4vw;
+}
 
 h1 {
   font-size:6vw;
   font-weight: bold;
+}
+
+table {
+  border-style: inset;
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th, tr {
+  border: 1px solid #00b300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 sup, sub {

@@ -1,8 +1,8 @@
 var isTriangle = function(a,b,c) {
   if((a >= b + c)||(b >= a + c)||(c >= a + b)) {
-    return false;
-  } else {
     return true;
+  } else {
+    return false;
   }
 };
 var orderSides = function(sides) {
@@ -52,8 +52,7 @@ function solveTriLLL() {
       triangle['orderSides'] = function() {}
 
       //// DIBUJAR TRIANGULO
-      //document.getElementById("triangle").innerHTML = drawTriangle(orderSides([triangle.side1,triangle.side2,triangle.side3]));
-      document.getElementById("triangle").innerHTML = drawTriangle([triangle.side1,triangle.side2,triangle.side3]);
+      document.getElementById("triangle").innerHTML = drawTriangle(orderSides([triangle.side1,triangle.side2,triangle.side3]));
       
       //// Expresar VALORES OBTENIDOS
       document.getElementById("alp").innerHTML = alpha;
