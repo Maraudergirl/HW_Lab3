@@ -50,16 +50,15 @@ function solveTriLLL() {
         side3: c
       };
       triangle['orderSides'] = function() {}
+
       //// DIBUJAR TRIANGULO
-
-    document.getElementById("triangle").innerHTML = drawTriangle(orderSides([triangle.side1,triangle.side2,triangle.side3]));
+      //document.getElementById("triangle").innerHTML = drawTriangle(orderSides([triangle.side1,triangle.side2,triangle.side3]));
+      document.getElementById("triangle").innerHTML = drawTriangle([triangle.side1,triangle.side2,triangle.side3]);
+      
       //// Expresar VALORES OBTENIDOS
-
-    document.getElementById("alp").innerHTML = alpha;
-    document.getElementById("bet").innerHTML = beta;
-    document.getElementById("gam").innerHTML = gamma;
-
-
+      document.getElementById("alp").innerHTML = alpha;
+      document.getElementById("bet").innerHTML = beta;
+      document.getElementById("gam").innerHTML = gamma;
     }
 
 }
