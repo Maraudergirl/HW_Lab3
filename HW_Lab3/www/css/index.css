@@ -8,17 +8,6 @@ html, body {
   width: 100%;
 }
 
-@font-face {
-  font-family: Dosis;
-  src: url(fonts/Dosis-Regular.ttf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Saira;
-  src: url(fonts/SairaSemiCondensed-Regular.ttf);
-  font-weight: bold;
-}
 body {
   background-color: #ddffcc;
   font-family: Saira;
@@ -33,6 +22,18 @@ header {
   font-family: Dosis;
   font-size:8vw;
   padding: 20px;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Dosis;
+  src: url(fonts/Dosis-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Saira;
+  src: url(fonts/SairaSemiCondensed-Regular.ttf);
   font-weight: bold;
 }
 
@@ -73,7 +74,8 @@ li a:hover {
 }
 
 main {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
   height: calc(100% - 180px);
   overflow: auto;
 }
